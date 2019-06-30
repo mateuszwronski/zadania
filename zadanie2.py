@@ -26,11 +26,31 @@ wagi = [4, 4, 3, 1, 2, 4, 2, 1, 5, 5, 5, 1, 1, 2, 5, 1, 1, 2, 1, 5, 5, 3, 2,
         5, 4, 1, 5, 5, 3, 3]
 
 # średnia arytmetyczna
-a = (sum(wartosci))
-b = (len(wartosci))
-wynik = a / b
-print(wynik)
+# a = (sum(wartosci))
+# b = (len(wartosci))
+# wynik = a / b
+# print(wynik)
+
+def srednia_arytmetyczna(zbior):
+    dodawanie = 0
+    ilosc = len(zbior)
+    rozwiazanie = 0
+    for liczba in zbior:
+        dodawanie += liczba
+    rozwiazanie = dodawanie / ilosc
+    return float(rozwiazanie)
+print(srednia_arytmetyczna(wartosci))
 
 
-# Pozostałe zadania wyrywają mi włosy z głowy. Nadal nie rozumiem jak przełożyć wzór matematyczny na kod w pętli.
-# Czekam na rozwiązanie w/w zadań, fajnie jakbyś opisał krok po kroku co dana linia kodu powoduje.
+# średnia geometryczna
+
+def srednia_geometryczna(zbior):
+    mnozenie = 1
+    ilosc = len(zbior)
+    rozwiazanie = 0
+    for liczba in zbior:
+        mnozenie *= liczba
+    rozwiazanie = mnozenie**(1.0/ilosc)
+    return float(rozwiazanie)
+print(srednia_geometryczna(wartosci))
+
