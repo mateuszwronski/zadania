@@ -23,5 +23,3 @@ liczby = range(10, 31)
 for liczba in liczby:
     if liczba >= 10:
         print(liczba, liczba**2, math.sqrt(liczba))
-    elif liczba % 3 == 0:
-        print(liczba, "jest podzielna przez 3")
