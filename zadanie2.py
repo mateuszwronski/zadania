@@ -54,3 +54,30 @@ def srednia_geometryczna(zbior):
     return float(rozwiazanie)
 print(srednia_geometryczna(wartosci))
 
+# średnia harmoniczna
+#        n
+# -------------------
+# 1   1    1    1    1
+#-- + -- + -- + -- + --
+# a   b    c    d    e
+ 
+
+def srednia_harmoniczna(zbior):
+    dodatnie = []
+    dodawanie = 0
+    rozwiazanie = 0
+    mianownik = 0
+    for x in zbior:
+        if x >= 1:
+            dodatnie.append(x)
+    ilosc = (len(dodatnie))
+
+    for liczba in dodatnie:
+        dodawanie += liczba
+        mianownik = 
+        rozwiazanie = ilosc / (1 / liczba)
+        return float(rozwiazanie)
+        pass
+        ####Poddaje się przy ułamkach!#### Google nie pomogło :(
+
+print(srednia_harmoniczna(wartosci))
